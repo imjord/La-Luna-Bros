@@ -1,0 +1,26 @@
+{
+  "name": "la-luna-bros",
+  "version": "1.0.0",
+  "description": "A blog to post stuff related to la luna resturant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjord/La-Luna-Bros.git"
+  },
+  "author": "imjord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imjord/La-Luna-Bros/issues"
+  },
+  "homepage": "https://github.com/imjord/La-Luna-Bros#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5"
+  }
+}
