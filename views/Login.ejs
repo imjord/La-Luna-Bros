@@ -1,18 +1,22 @@
-<%- include('./partials/head.ejs', { title: 'Authentication Example' }) -%>
+<%- include('./partials/head.ejs', { title: 'login' }) -%>
 
 <h1>Login</h1>
 
-<form method="post" action="/login">
+<form method="POST" action="/login">
   <p>
     <label>Username:</label>
-    <input type="text" name="username" />
+    <input type="text" name="username" placeholder="imjord" />
+  </p>
+  <p>
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="jordanharperjs@gmail.com" />
   </p>
   <p>
     <label>Password:</label>
-    <input type="text" name="password" />
+    <input type="password" name="password" placeholder="******" />
   </p>
   <p>
-    <input type="submit" value="Login" />
+    <button>sign in</button>
   </p>
 </form>
 
