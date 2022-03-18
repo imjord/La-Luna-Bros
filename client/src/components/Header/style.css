@@ -1,0 +1,19 @@
+.idk {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: rgba(250, 173, 85, 0.486);
+    width: 50%;
+    font-size: 1.5rem;
+    color: rgba(131, 45, 5, 0.705);
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 20px 30px;
+
+}
