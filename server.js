@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended: false}));
 
 // routes
 const homeRoute = require('./routes/homeRoute');
+const loginRoute = require('./routes/loginRoute');
 
 
 app.set('view engine', 'ejs');
@@ -17,7 +18,8 @@ app.set('view engine', 'ejs');
 // css 
 app.use(express.static('./public'));
 
-app.use('/', homeRoute);
+app.use('/', loginRoute);
+app.use('/home', homeRoute);
 
 
 
