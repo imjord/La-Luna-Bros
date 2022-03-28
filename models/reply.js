@@ -5,13 +5,17 @@ const { model, Schema, Types } = require("mongoose");
 const replySchema = new Schema({
     postId: {
         type: Schema.Types.ObjectId,
-        ref: 'post',
+        ref: 'Post',
         required: true
     },
     parentId:{
         type: Schema.Types.ObjectId,
-        ref: 'reply',
+        ref: 'Reply',
         required: false, // if not populated, then its a top level comment
+    },
+    username: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     },
 
     replyBody: {
@@ -19,9 +23,13 @@ const replySchema = new Schema({
         required: true,
         maxLength: 280
     },
-    username: {
-        type: String,
-        required: true
+   
+    upVotes: {
+        type: Number
+    },
+
+    downVotes: {
+        type: Number
     },
     createdAt: {
         type: Date,
@@ -31,5 +39,6 @@ const replySchema = new Schema({
     }
 })
 
+const Reply = new model('Reply', replySchema)
 
-module.exports = model("reply", replySchema)
+module.exports = Reply;

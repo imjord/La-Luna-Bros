@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 
-mongoose.connect('mongodb+srv://imjord:imjord123@cluster0.r8vfn.mongodb.net/LaLunaDB?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGODB);
 
 
 module.exports = mongoose.connection;
