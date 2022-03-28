@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: false}));
 
 // routes
 const homeRoute = require('./routes/homeRoute');
-const postRoute = require('./routes/postRoute');
+
 
 app.set('view engine', 'ejs');
 
@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 app.use('/', homeRoute);
-app.use('/post', postRoute);
+
 
 
 db.once('open', () =>{

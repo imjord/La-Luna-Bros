@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -15,12 +16,14 @@ body {
     background-color: rgba(0, 23, 87, 0.6);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.87);
     border-radius: 5px;
+    
 
 }
 .list {
     text-decoration: none;
     display: flex;
     padding: 10px 30px;
+ 
     
 }
 
@@ -34,4 +37,44 @@ body {
 
 .list a {
     text-decoration: none;
+}
+
+
+
+button {
+transition: 250ms ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-15);
+}
+
+main {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 40px;
+}
+
+.form-container {
+    background-color: darkblue;
+    padding: 20px 40px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.87);
+    
+
+}
+
+form {
+    color: white;
+
 }
