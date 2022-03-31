@@ -20,7 +20,7 @@ body {
 }
 
 .main-container {
-   
+    flex-direction: column;
     margin-top: 100px;
     width: 300px;
     height: 400px;
@@ -31,7 +31,44 @@ body {
 }
 
 
+.login-title {
+    margin-bottom: 40px;
+    color: white;
+}
 
+.sign {
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+.singup-form {
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px 0 5px 0px;
+    border: 6px solid rgba(44, 50, 136, 0.746);
+    border-radius: 5px;
+
+}
+
+button {
+   padding: 0px 48px 0px 48px;
+}
+
+.login-span {
+    font-size: 25px;
+    color: red;
+}
+
+.login-span a {
+    color: white;
+    text-decoration: none;
+}
 
 
 .nav-container {

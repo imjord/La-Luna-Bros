@@ -11,6 +11,7 @@ app.use(express.urlencoded({extended: false}));
 // routes
 const homeRoute = require('./routes/homeRoute');
 const loginRoute = require('./routes/loginRoute');
+const registerRoute = require('./routes//registerRoute');
 
 
 app.set('view engine', 'ejs');
@@ -20,7 +21,7 @@ app.use(express.static('./public'));
 
 app.use('/', loginRoute);
 app.use('/home', homeRoute);
-
+app.use('/register', registerRoute);
 
 
 db.once('open', () =>{
