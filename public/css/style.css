@@ -114,10 +114,7 @@ button:hover {
 }
 
 main {
-    display: flex;
-    margin-top: 70px;
-    justify-content: center;
-    align-items: center;
+   
 
 }
 
@@ -130,10 +127,14 @@ main {
 }
 
 .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkblue;
     padding: 20px 40px;
     border-radius: 25px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.87);
+    width: auto;
     
 
 }
@@ -154,4 +155,11 @@ form {
 textarea{
     height: 150px;
     width: 200px;
+}
+
+
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
