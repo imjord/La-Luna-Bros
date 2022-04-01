@@ -7,7 +7,7 @@ const Posts = {
 
 
     getPosts(req,res){
-        Post.find({}.then(data => res.render('Posts', {title: 'Posts page', data}))).catch(err => {
+        Post.find({}).then((data => res.render('Posts', {title: 'Posts page', data}))).catch(err => {
             res.status(500).send({message: err.message || "error getting"})
         })
     },
