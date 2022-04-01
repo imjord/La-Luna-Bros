@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 app.use('/', loginRoute);
-app.use('/home', homeRoute);
+app.use('/posts', homeRoute);
 app.use('/register', registerRoute);
 
 

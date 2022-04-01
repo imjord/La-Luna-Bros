@@ -14,7 +14,7 @@ const UserController = {
                     password: req.body.password
                 })
                 newUser.save()
-                return res.status(200).json({message: newUser});
+                return res.render('Posts', {title: 'posts page'})
             }
         })
     }

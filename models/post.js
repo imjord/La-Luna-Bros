@@ -14,30 +14,30 @@ const postSchema = new Schema({
         maxlength: 50
     },
 
-        postBody: {
+        postMessage: {
         type: String,
         required: true,
         minLength: 1,
         maxLength: 400
     },
 
-    upVotes: {
-        type: Number
-    },
+    // upVotes: {
+    //     type: Number
+    // },
 
-    downVotes: {
-        type: Number
-    },
-    replies: {
-        // // array of nested documents from reaction schema 
-        // ref: "Reaction"
+    // downVotes: {
+    //     type: Number
+    // },
+    // replies: {
+    //     // // array of nested documents from reaction schema 
+    //     // ref: "Reaction"
 
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
+    // },
+    // createdAt: {
+    //     type: Date,
+    //     default: Date.now,
     
-    },
+    // },
 })
 
 
